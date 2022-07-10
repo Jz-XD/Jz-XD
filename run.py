@@ -43,13 +43,13 @@ for xd in range(10000):
 	ugen2.append(uaku)
 
 
-	aa='Mozilla/5.0 (Linux; arm_64; Android'
+	aa='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['6','7','8','9','10','11','12'])
-	c='Redmi 5 Plus'
+	c='Redmi 3S'
 	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	e=random.randrange(1, 999)
 	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 YaApp_Android/22.70.1 YaSearchBrowser/'
+	g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
 	h=random.randrange(73,100)
 	i='0'
 	j=random.randrange(4200,4900)
@@ -659,7 +659,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r🎉 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"\r🥳 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}🥳]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
