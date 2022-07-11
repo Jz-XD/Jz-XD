@@ -160,7 +160,7 @@ def login_lagi334():
 		cetak(nel('\t©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
 		asu = random.choice([m,k,h,b,u])
 		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
-		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-S6310T Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.126 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
+		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; U; Android 2.2; en-us; GT-I5800 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1))
 		cok=open(".cok.txt", "w").write(cookie)
@@ -394,7 +394,7 @@ def lah():
 def grup():
 	print('')
 	id = input(""+balmond+h+" \x1b[1;94m>> Masukkan Idz Grup :\x1b[1;94m ")
-	ua = 'Mozilla/5.0 (Linux; Android 4.1.2; GT-S6310T Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.126 Mobile Safari/537.36'
+	ua = 'Mozilla/5.0 (Linux; U; Android 2.2; en-us; GT-I5800 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
 	miskinlu = {"user-agent": ua}
 	url = "https://mbasic.facebook.com/groups/"+id
 	ses = requests.Session()
@@ -439,7 +439,7 @@ def grup1(urls):
 	print(balmond+m+" \x1b[1;94mTekan CTRL + C Untuk Stop")
 	while True:
 		try:
-			ua = 'Mozilla/5.0 (Linux; Android 4.1.2; GT-S6310T Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.126 Mobile Safari/537.36'
+			ua = 'Mozilla/5.0 (Linux; U; Android 2.2; en-us; GT-I5800 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
 			miskinlu = {"user-agent": ua}
 			try:
 				url = use[0]
