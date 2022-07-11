@@ -1127,7 +1127,7 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('clear')
 	except:pass
-	alvino_xy(f'\n\t{x}——> {h}Assalamualaikum Mamang..\n\t{x}——> {h}Ngentod Yuk!\n\t{x})
+	
 	time.sleep(3)
 	login()
 
