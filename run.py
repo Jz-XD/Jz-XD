@@ -161,7 +161,7 @@ def login_lagi334():
 		cetak(nel('\t©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
 		asu = random.choice([m,k,h,b,u])
 		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
-		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-A710F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
+		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-I9108 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1))
 		cok=open(".cok.txt", "w").write(cookie)
@@ -170,7 +170,7 @@ def login_lagi334():
 	except Exception as e:
 		os.system("rm -f .token.txt")
 		os.system("rm -f .cok.txt")
-		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
+		print(f'  %s[%sx%s]%s Login Gagal ____ Cookies Expired !!%s'%(x,k,x,m,x))
 		exit()
 #------------------[ BAGIAN-MENU ]----------------#
 def menu(my_name,my_id):
@@ -224,13 +224,13 @@ def result():
 	print('>> Kembali	')
 	kz = input('\n>> Pilih : ')
 	if kz in ['1','01']:
-		try:vin = os.listdir('CP')
+		try:vin = os.listdir('OK')
 		except FileNotFoundError:
 			print('>> File Tidak Di Temukan ')
 			time.sleep(3)
 			back()
 		if len(vin)==0:
-			print('>> Anda Tidak Memiliki Hasil CP ')
+			print('>> Anda Tidak Memiliki Hasil OK ')
 			time.sleep(2)
 			back()
 		else:
@@ -253,7 +253,7 @@ def result():
 			except KeyError:
 				print('>> Pilih Yang Benar ')
 				exit()
-			try:lin = open('CP/'+geh,'r').read().splitlines()
+			try:lin = open('OK/'+geh,'r').read().splitlines()
 			except:
 				print('>> File Tidak Di Temukan ')
 				time.sleep(2)
@@ -267,20 +267,20 @@ def result():
 			input('[ Klik Enter ]')
 			back()
 	elif kz in ['2','02']:
-		try:vin = os.listdir('OK')
+		try:vin = os.listdir('CP')
 		except FileNotFoundError:
 			print('>> File Tidak Di Temukan ')
 			time.sleep(2)
 			back()
 		if len(vin)==0:
-			print('>> Anda Tidak Mempunyai File OK ')
+			print('>> Anda Tidak Mempunyai File CP ')
 			time.sleep(2)
 			back()
 		else:
 			cih = 0
 			lol = {}
 			for isi in vin:
-				try:hem = open('OK/'+isi,'r').readlines()
+				try:hem = open('CP/'+isi,'r').readlines()
 				except:continue
 				cih+=1
 				if cih<100:
@@ -296,7 +296,7 @@ def result():
 			except KeyError:
 				print('>> Pilih Yang Benar ')
 				exit()
-			try:lin = open('OK/'+geh,'r').read().splitlines()
+			try:lin = open('CP/'+geh,'r').read().splitlines()
 			except:
 				print('>> File Tidak Di Temukan ')
 				time.sleep(2)
@@ -395,7 +395,7 @@ def lah():
 def grup():
 	print('')
 	id = input(""+balmond+h+" \x1b[1;94m>> Masukkan Idz Grup :\x1b[1;94m ")
-	ua = 'Mozilla/5.0 (Linux; Android 7.0; SM-A710F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36'
+	ua = 'Mozilla/5.0 (Linux; Android 4.1.2; GT-I9108 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36'
 	miskinlu = {"user-agent": ua}
 	url = "https://mbasic.facebook.com/groups/"+id
 	ses = requests.Session()
@@ -440,7 +440,7 @@ def grup1(urls):
 	print(balmond+m+" \x1b[1;94mTekan CTRL + C Untuk Stop")
 	while True:
 		try:
-			ua = 'Mozilla/5.0 (Linux; Android 7.0; SM-A710F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36'
+			ua = 'Mozilla/5.0 (Linux; Android 4.1.2; GT-I9108 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36'
 			miskinlu = {"user-agent": ua}
 			try:
 				url = use[0]
