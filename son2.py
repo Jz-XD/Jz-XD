@@ -169,7 +169,10 @@ def login():
 	except IOError:
 		login_lagi334()
 def login_lagi334():
-	try:
+	banner()
+	pil='1'
+	if pil in ['1','01']:
+		try:
 		cik='# LOGIN MENGGUNAKAN COOKIE'
 			cik2=mark(cik ,style='red')
 			sol().print(cik2)
